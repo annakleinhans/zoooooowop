@@ -1,6 +1,6 @@
 public class Unicorn extends Animal {
 
-    private String name;
+
     private String favoriteFood = "marshmallows";
 
     public Unicorn(String name){
@@ -11,4 +11,9 @@ public class Unicorn extends Animal {
         System.out.println(name + " sleeps in a cloud.");
     }
 
+    public void eat(String food){
+        System.out.println(super.name + " eats " + food + ".");
+        System.out.println("YUM!!! " + super.name + " wants more " + food + ".");
+        this.sleep(super.name);
+    }
 }
